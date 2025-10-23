@@ -125,6 +125,11 @@ GHI CHÚ:
 # 2.4 Cài đặt thư viện trên nodered:
 ### truy cập giao diện nodered bằng url: http://localhost:1880
 <img width="1917" height="972" alt="image" src="https://github.com/user-attachments/assets/eafee18c-f984-4e8c-a2a2-44ecfaff2b9d" />
-
+### Sửa file `D:\nodejs\nodered\work\settings.js`
+<img width="1398" height="779" alt="image" src="https://github.com/user-attachments/assets/cbde3a72-f653-4507-92b2-c2fef2033440" />
+thiết lập bằng tool: https://tms.tnut.edu.vn/pw.php
+<img width="1470" height="434" alt="image" src="https://github.com/user-attachments/assets/c9c182f5-523a-4ee5-8f36-193e7bd0517d" />
+### chạy lại nodered
+<img width="1912" height="906" alt="image" src="https://github.com/user-attachments/assets/434e91eb-57ab-4a53-b444-0e07e7d7a763" />
 # 2.5. tạo api back-end bằng nodered:
 
