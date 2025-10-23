@@ -132,4 +132,5 @@ thiết lập bằng tool: https://tms.tnut.edu.vn/pw.php
 ### chạy lại nodered
 <img width="1912" height="906" alt="image" src="https://github.com/user-attachments/assets/434e91eb-57ab-4a53-b444-0e07e7d7a763" />
 # 2.5. tạo api back-end bằng nodered:
+<img width="1919" height="932" alt="image" src="https://github.com/user-attachments/assets/f5609d23-5fd5-46e4-b4ef-8972f294df26" />
 
