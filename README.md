@@ -60,7 +60,7 @@ node "D:\nodejs\nodered\node_modules\node-red\red.js" -u "D:\nodejs\nodered\work
   3. MSSQL: để truy vấn dữ liệu tới CSDL, nhận tham số từ node tiền xử lý
   4. http response: để phản hồi dữ liệu về client: Status Code=200, Header add : Content-Type = application/json
   có thể thêm node `debug` để quan sát giá trị trung gian.
-- test api thông qua trình duyệt, ví dụ: http://localhost:1880/timkiem?q=thị
+- chông qua trình duyệt, ví dụ: http://localhost:1880/timkiem?q=thị
 2.6. Tạo giao diện front-end:
 - html form gồm các file : index.html, fullname.js, fullname.css
   cả 3 file này đặt trong thư mục: `D:\Apache24\fullname`
@@ -93,24 +93,24 @@ GHI CHÚ:
 8. sv được sử dụng AI để tham khảo.
 ## BÀI LÀM
 # 2.1Cài đặt Apache web server:
-### Vô hiệu hoá IIS
+## Vô hiệu hoá IIS
 <img width="476" height="188" alt="image" src="https://github.com/user-attachments/assets/18d74b08-9433-47c8-a9d4-5c953e77cd45" />
-### CẤU HÌNH D:\Apache24\conf\httpd.conf
+## CẤU HÌNH D:\Apache24\conf\httpd.conf
 <img width="806" height="110" alt="image" src="https://github.com/user-attachments/assets/83b02312-38cc-4dce-9c7e-890861332b4d" />
-### CẤU HÌNH D:Apache24\conf\extra\httpd-vhosts.conf
+## CẤU HÌNH D:Apache24\conf\extra\httpd-vhosts.conf
 <img width="572" height="228" alt="image" src="https://github.com/user-attachments/assets/d7f7bfed-fa8b-4416-a1e6-88cfd30d979a" />
-### fake ip 127.0.0.1 cho domain này
+## fake ip 127.0.0.1 cho domain này
 <img width="506" height="144" alt="image" src="https://github.com/user-attachments/assets/6650ac8b-d45e-43be-8409-7a326410ede5" />
-### cài đặt và khởi động web server apache.
+## cài đặt và khởi động web server apache.
 <img width="1071" height="213" alt="image" src="https://github.com/user-attachments/assets/68c86f28-d90f-430e-bff9-b18f16e49055" />
-### web server apache.
+## web server apache.
 <img width="647" height="345" alt="image" src="https://github.com/user-attachments/assets/3202db1f-bb9a-4d46-9465-ef38b10e778b" />
 # 2.2. Cài đặt nodejs và nodered
 ### Cài đặt nodejs
 <img width="426" height="266" alt="image" src="https://github.com/user-attachments/assets/8a73518c-0971-4833-bee3-11599b957d42" />
-### Cài đặt nodered:
+## Cài đặt nodered:
 <img width="976" height="185" alt="image" src="https://github.com/user-attachments/assets/806d36fb-86d7-49a9-9c9d-9498b3a77526" />
-### a1-nodered
+## a1-nodered
 <img width="737" height="73" alt="image" src="https://github.com/user-attachments/assets/dbe14db4-c61b-4356-b5a9-0c0ef9b55577" />
 # 2.3. Tạo csdl tuỳ ý trên mssql (sql server 2022), nhớ các thông số kết nối: ip, port, username, password, db_name, table_name
 <img width="498" height="331" alt="image" src="https://github.com/user-attachments/assets/e1e0eba9-374a-4c24-9269-eed3a7d64671" />
@@ -123,14 +123,36 @@ GHI CHÚ:
 | **DB name**    | `NodeRedDB`             |
 | **Table name** | `SensorData`            |
 # 2.4 Cài đặt thư viện trên nodered:
-### truy cập giao diện nodered bằng url: http://localhost:1880
+## truy cập giao diện nodered bằng url: http://localhost:1880
 <img width="1917" height="972" alt="image" src="https://github.com/user-attachments/assets/eafee18c-f984-4e8c-a2a2-44ecfaff2b9d" />
-### Sửa file `D:\nodejs\nodered\work\settings.js`
+## Sửa file `D:\nodejs\nodered\work\settings.js`
 <img width="1398" height="779" alt="image" src="https://github.com/user-attachments/assets/cbde3a72-f653-4507-92b2-c2fef2033440" />
 thiết lập bằng tool: https://tms.tnut.edu.vn/pw.php
 <img width="1470" height="434" alt="image" src="https://github.com/user-attachments/assets/c9c182f5-523a-4ee5-8f36-193e7bd0517d" />
-### chạy lại nodered
+## chạy lại nodered
 <img width="1912" height="906" alt="image" src="https://github.com/user-attachments/assets/434e91eb-57ab-4a53-b444-0e07e7d7a763" />
 # 2.5. tạo api back-end bằng nodered:
 <img width="1919" height="932" alt="image" src="https://github.com/user-attachments/assets/f5609d23-5fd5-46e4-b4ef-8972f294df26" />
+##  http://localhost:1880/timkiem?q=nha
+<img width="671" height="791" alt="image" src="https://github.com/user-attachments/assets/94540482-4086-458d-bd80-7370fea98aad" />
+# 2.6 Tạo giao diện front-end:
+<img width="874" height="407" alt="image" src="https://github.com/user-attachments/assets/e90c9ce4-289c-4fa8-a534-e54130615fca" />
+# KẾT QUẢ
+<img width="1044" height="644" alt="image" src="https://github.com/user-attachments/assets/ac8db192-e8ef-4ca2-8875-c5f4ee64cd83" />
+# 2.7 
+Đây là lần đầu tiên em thực hiện cài đặt và kết nối hệ thống bao gồm Apache (Front-end) , Node-RED (Back-end) và SQL Server (Database) .
+Qua bài viết này, em đã hiểu cách cài đặt, cấu hình và cách liên kết các phần mềm để tạo thành một chỉnh sửa web ứng dụng.
+Về cài đặt:
+Em đã biết cách cấu hình Apache trong các tệp httpd.conf, httpd-vhosts.confđể tạo miền chạy web ảo tại localhost.
+Cài đặt Node.js và Node-RED giúp em hiểu lệnh sử dụng dòng quy định, cài đặt thư viện và chạy Node-RED như một dịch vụ bằng nssm.
+Hướng tới việc tạo API Back-end:
+Học cách sử dụng các nút http in, function, để xây dựng cơ sở dữ liệu truy cập API MSSQL. Truy cập thử bằng URL như giúp em hiểu cách yêu cầu xử lý Node-RED và trả về JSON.http response
+http://localhost:1880/timkiem?q=nha
+Về Front-end:
+Biết cách sử dụng HTML, CSS và JavaScript để tạo giao diện, gửi yêu cầu API bằng fetch, nhận dữ liệu JSON và hiển thị kết quả.
+Từ đó em biết rõ cơ chế hoạt động:
+Front-end (hiển thị) ⇄ Back-end (xử lý) ⇄ Database (lưu trữ) .
+Kết luận:
+Bài thực hành giúp em hiểu toàn bộ bộ phát triển quy trình phát triển một cơ sở web ứng dụng, biết cách xử lý lỗi cấu hình, kết nối và hệ thống vận hành.
+Em thấy bài học rất hữu ích, giúp em tự tin hơn khi phát triển dự án thực tế sau này.
 
